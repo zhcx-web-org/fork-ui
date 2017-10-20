@@ -1,17 +1,11 @@
 # Element UI 贡献指南
 
-Hi! 首先感谢你使用 Element UI。
-
-Element UI 是一套为开发者、设计师和产品经理准备的开源组件库，旨在快速搭建页面。它基于 Vue 2.0 开发，并提供了配套的设计资源，充分满足可定制化的需求。
-
-Element UI 的成长离不开大家的支持，如果你愿意为 Element UI 贡献代码或提供建议，请阅读以下内容。
+基于 Vue 2.0 开发，并提供了配套的设计资源，充分满足可定制化的需求。
 
 ## Issue 规范
 - issue 仅用于提交 Bug 或 Feature 以及设计相关的内容，其它内容可能会被直接关闭。如果你在使用时产生了疑问，请到 Slack 或 [Gitter](https://gitter.im/ElemeFE/element) 里咨询。
 
 - 在提交 issue 之前，请搜索相关内容是否已被提出。
-
-- 请说明 Element UI 和 Vue 的版本号，并提供操作系统和浏览器信息。推荐使用 [JSFiddle](https://jsfiddle.net/) 生成在线 demo，这能够更直观地重现问题。
 
 ## Pull Request 规范
 - 请先 fork 一份到自己的项目下，不要直接在仓库下建分支。
