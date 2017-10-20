@@ -118,7 +118,11 @@
   .demo {
     margin: 20px 0;
   }
-  
+
+  .image-full {
+    width: 100%;
+  }
+
   @media (max-width: 1140px) {
     .container,
     .page-container {
