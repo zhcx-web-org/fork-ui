@@ -1,0 +1,15 @@
+{
+  "name": "zhcx-standard",
+  "version": "0.0.0",
+  "description": "A standard component for Vue.js.",
+  "keywords": [
+    "zhcx",
+    "vue",
+    "component"
+  ],
+  "main": "./lib/index.js",
+  "repository": "https://github.com/killwinv/fork-ui/tree/master/packages/standard",
+  "author": "zhcxfed",
+  "license": "MIT",
+  "dependencies": {}
+}
