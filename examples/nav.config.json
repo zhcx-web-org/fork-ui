@@ -242,8 +242,12 @@
           "groupName": "ZHCX",
           "list": [
             {
+              "path": "/standard",
+              "title": "Standard 视觉规范"
+            },
+            {
               "path": "/wis-nav",
-              "title": "WisNav"
+              "title": "WisNav 侧边栏"
             }
           ]
         }
@@ -492,6 +496,10 @@
         {
           "groupName": "ZHCX",
           "list": [
+            {
+              "path": "/standard",
+              "title": "Standard"
+            },
             {
               "path": "/wis-nav",
               "title": "WisNav"
