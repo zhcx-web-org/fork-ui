@@ -1,6 +1,6 @@
-import { hasClass, addClass, removeClass } from 'element-ui/src/utils/dom';
-import ElCheckbox from 'element-ui/packages/checkbox';
-import ElTag from 'element-ui/packages/tag';
+import { hasClass, addClass, removeClass } from 'ele-fork-ui/src/utils/dom';
+import ElCheckbox from 'ele-fork-ui/packages/checkbox';
+import ElTag from 'ele-fork-ui/packages/tag';
 import Vue from 'vue';
 import FilterPanel from './filter-panel.vue';
 
@@ -369,9 +369,15 @@ export default {
         const bodyStyle = document.body.style;
         if (rect.width > 12 && rect.right - event.pageX < 8) {
           bodyStyle.cursor = 'col-resize';
+          if (hasClass(target, 'is-sortable')) {
+            target.style.cursor = 'col-resize';
+          }
           this.draggingColumn = column;
         } else if (!this.dragging) {
           bodyStyle.cursor = '';
+          if (hasClass(target, 'is-sortable')) {
+            target.style.cursor = 'pointer';
+          }
           this.draggingColumn = null;
         }
       }

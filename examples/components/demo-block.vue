@@ -138,7 +138,7 @@
       }
 
       &:hover {
-        color: #20a0ff;
+        color: #fc7814;
         background-color: #f9fafc;
       }
 
@@ -174,10 +174,10 @@
       goJsfiddle() {
         const { script, html, style } = this.jsfiddle;
         const resourcesTpl = '<scr' + 'ipt src="//unpkg.com/vue/dist/vue.js"></scr' + 'ipt>' +
-        '\n<scr' + `ipt src="//unpkg.com/element-ui@${ version }/lib/index.js"></scr` + 'ipt>';
+        '\n<scr' + `ipt src="//unpkg.com/ele-fork-ui@${ version }/lib/index.js"></scr` + 'ipt>';
         let jsTpl = (script || '').replace(/export default/, 'var Main =').trim();
         let htmlTpl = `${resourcesTpl}\n<div id="app">\n${html.trim()}\n</div>`;
-        let cssTpl = `@import url("//unpkg.com/element-ui@${ version }/lib/theme-default/index.css");\n${(style || '').trim()}\n`;
+        let cssTpl = `@import url("//unpkg.com/ele-fork-ui@${ version }/lib/theme-default/index.css");\n${(style || '').trim()}\n`;
         jsTpl = jsTpl
           ? jsTpl + '\nvar Ctor = Vue.extend(Main)\nnew Ctor().$mount(\'#app\')'
           : 'new Vue().$mount(\'#app\')';

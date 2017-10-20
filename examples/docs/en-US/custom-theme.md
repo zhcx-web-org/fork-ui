@@ -41,7 +41,7 @@ In `element-variables.css` you can find all the variables we used to style Eleme
 
   /* Colors
   -------------------------- */
-  --color-primary: #20a0ff;
+  --color-primary: #fc7814;
   --color-success: #13ce66;
   --color-warning: #f7ba2a;
   --color-danger: #ff4949;
@@ -74,7 +74,7 @@ By default the build theme file is placed inside `./theme`. You can specify its 
 
 ```javascript
 import '../theme/index.css'
-import ElementUI from 'element-ui'
+import ElementUI from 'ele-fork-ui'
 import Vue from 'vue'
 
 Vue.use(ElementUI)
@@ -86,7 +86,7 @@ If you are using `babel-plugin-component` for on-demand import, just modify `.ba
 {
   "plugins": [["component", [
     {
-      "libraryName": "element-ui",
+      "libraryName": "ele-fork-ui",
       "styleLibraryName": "~theme"
     }
   ]]]
