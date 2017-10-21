@@ -34,7 +34,7 @@ export default ${ComponentName};`
     content: `var cooking = require('cooking');
 var gen = require('../../build/gen-single-config');
 
-cooking.set(gen(__dirname, 'El${ComponentName}'));
+cooking.set(gen(__dirname, 'Wis${ComponentName}'));
 
 module.exports = cooking.resolve();
 `
@@ -42,17 +42,17 @@ module.exports = cooking.resolve();
   {
     filename: 'package.json',
     content: `{
-  "name": "element-${componentname}",
+  "name": "zhcx-${componentname}",
   "version": "0.0.0",
   "description": "A ${componentname} component for Vue.js.",
   "keywords": [
-    "element",
+    "zhcx",
     "vue",
     "component"
   ],
   "main": "./lib/index.js",
-  "repository": "https://github.com/ElemeFE/element/tree/master/packages/${componentname}",
-  "author": "elemefe",
+  "repository": "https://github.com/killwinv/fork-ui/tree/master/packages/${componentname}",
+  "author": "zhcxfed",
   "license": "MIT",
   "dependencies": {}
 }`
@@ -60,12 +60,12 @@ module.exports = cooking.resolve();
   {
     filename: 'src/main.vue',
     content: `<template>
-  <div class="el-${componentname}"></div>
+  <div class="wis-${componentname}"></div>
 </template>
 
 <script>
 export default {
-  name: 'El${ComponentName}'
+  name: 'Wis${ComponentName}'
 };
 </script>`
   },
