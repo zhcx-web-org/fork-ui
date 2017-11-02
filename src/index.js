@@ -65,6 +65,7 @@ import Cascader from '../packages/cascader/index.js';
 import ColorPicker from '../packages/color-picker/index.js';
 import Transfer from '../packages/transfer/index.js';
 import WisNav from '../packages/wis-nav/index.js';
+import SelectTree from '../packages/select-tree/index.js';
 import locale from 'ele-fork-ui/src/locale';
 import CollapseTransition from 'ele-fork-ui/src/transitions/collapse-transition';
 
@@ -130,6 +131,7 @@ const components = [
   ColorPicker,
   Transfer,
   WisNav,
+  SelectTree,
   CollapseTransition
 ];
 
@@ -229,5 +231,6 @@ module.exports = {
   Cascader,
   ColorPicker,
   Transfer,
-  WisNav
+  WisNav,
+  SelectTree
 };
