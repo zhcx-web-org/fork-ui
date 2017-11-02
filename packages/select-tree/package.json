@@ -1,0 +1,15 @@
+{
+  "name": "element-select-tree",
+  "version": "0.0.0",
+  "description": "A select-tree component for Vue.js.",
+  "keywords": [
+    "element",
+    "vue",
+    "component"
+  ],
+  "main": "./lib/index.js",
+  "repository": "https://github.com/ElemeFE/element/tree/master/packages/select-tree",
+  "author": "elemefe",
+  "license": "MIT",
+  "dependencies": {}
+}

@@ -244,6 +244,10 @@
             {
               "path": "/wis-nav",
               "title": "WisNav"
+            },
+            {
+              "path": "/select-tree",
+              "title": "SelectTree"
             }
           ]
         }
@@ -495,6 +499,10 @@
             {
               "path": "/wis-nav",
               "title": "WisNav"
+            },
+            {
+              "path": "/select-tree",
+              "title": "SelectTree"
             }
           ]
         }
