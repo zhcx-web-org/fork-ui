@@ -11,7 +11,7 @@
         color: #475669;
       }
       &:hover a {
-        color: #fc7814;
+        color: #20a0ff;
       }
     }
     .heading {
@@ -50,7 +50,7 @@
             top: 10px;
             width: 17px;
             height: @width;
-            background-color: #fc7814;
+            background-color: #20a0ff;
             border: 0;
           }
         }
@@ -96,7 +96,7 @@
           left: -31px;
           top: 13px;
           circle: 13px transparent;
-          border: 2px solid #fc7814;
+          border: 2px solid #20a0ff;
           box-sizing: border-box;
           background-color: #fff;
         }

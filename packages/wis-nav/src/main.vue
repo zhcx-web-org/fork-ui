@@ -1,9 +1,9 @@
 <template>
-  <div class="wis-wis-nav"></div>
+  <div class="el-wis-nav"></div>
 </template>
 
 <script>
 export default {
-  name: 'WisWisNav'
+  name: 'ElWisNav'
 };
 </script>

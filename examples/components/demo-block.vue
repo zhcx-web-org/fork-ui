@@ -138,7 +138,7 @@
       }
 
       &:hover {
-        color: #fc7814;
+        color: #20a0ff;
         background-color: #f9fafc;
       }
 

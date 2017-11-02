@@ -64,6 +64,7 @@ import CollapseItem from '../packages/collapse-item/index.js';
 import Cascader from '../packages/cascader/index.js';
 import ColorPicker from '../packages/color-picker/index.js';
 import Transfer from '../packages/transfer/index.js';
+import WisNav from '../packages/wis-nav/index.js';
 import locale from 'ele-fork-ui/src/locale';
 import CollapseTransition from 'ele-fork-ui/src/transitions/collapse-transition';
 
@@ -128,6 +129,7 @@ const components = [
   Cascader,
   ColorPicker,
   Transfer,
+  WisNav,
   CollapseTransition
 ];
 
@@ -158,7 +160,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 };
 
 module.exports = {
-  version: '0.0.5',
+  version: '0.0.6',
   locale: locale.use,
   i18n: locale.i18n,
   install,
@@ -226,5 +228,6 @@ module.exports = {
   CollapseItem,
   Cascader,
   ColorPicker,
-  Transfer
+  Transfer,
+  WisNav
 };

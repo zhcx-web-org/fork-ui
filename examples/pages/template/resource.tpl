@@ -65,7 +65,7 @@
       display: inline-block;
       line-height: @height;
       font-size: 14px;
-      background-color: #fc7814;
+      background-color: #20a0ff;
       color: #fff;
       text-align: center;
       border: 0;

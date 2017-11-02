@@ -4,7 +4,7 @@
   }
   .header {
     height: 80px;
-    background-color: #fc7814;
+    background-color: #20a0ff;
     color: #fff;
     top: 0;
     left: 0;
@@ -111,7 +111,7 @@
           left: 0;
           width: 100%;
           height: 4px;
-          background:#FFCAA3;
+          background:#99d2fc;
         }
       }
     }
@@ -231,7 +231,7 @@
         immediate: true,
         handler() {
           this.isHome = /^home/.test(this.$route.name);
-          this.headerStyle.backgroundColor = `rgba(252, 120, 20, ${ this.isHome ? '0' : '1' })`;
+          this.headerStyle.backgroundColor = `rgba(32, 160, 255, ${ this.isHome ? '0' : '1' })`;
         }
       }
     },
@@ -260,7 +260,7 @@
         if (this.isHome) {
           const threshold = 200;
           let alpha = Math.min((document.documentElement.scrollTop || document.body.scrollTop), threshold) / threshold;
-          this.$refs.header.style.backgroundColor = `rgba(252, 120, 20, ${ alpha })`;
+          this.$refs.header.style.backgroundColor = `rgba(32, 160, 255, ${ alpha })`;
         }
       });
     }

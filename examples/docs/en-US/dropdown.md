@@ -9,7 +9,7 @@
     }
     .el-dropdown-link {
       cursor: pointer;
-      color: #fc7814;
+      color: #20a0ff;
     }
     .el-icon-caret-bottom {
       font-size: 12px;

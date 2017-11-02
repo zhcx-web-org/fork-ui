@@ -36,7 +36,7 @@
       }
       @when active {
         span, i {
-          color: #fc7814;
+          color: #20a0ff;
         }
         i {
           transform: rotateZ(180deg) translateY(2px);
@@ -44,7 +44,7 @@
       }
       &:hover {
         span, i {
-          color: #fc7814;
+          color: #20a0ff;
         }
       }
     }
@@ -63,7 +63,7 @@
         transition: all .3s;
 
         &.active {
-          color: #fc7814;
+          color: #20a0ff;
         }
       }
       .nav-item {
@@ -79,7 +79,7 @@
 
 
           &:hover {
-            color: #fc7814;
+            color: #20a0ff;
           }
         }
       }

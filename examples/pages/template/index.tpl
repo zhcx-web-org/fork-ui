@@ -37,7 +37,7 @@
     margin-top: -140px;
     transform: skewY(-5deg);
     transform-origin: center;
-    background-image: linear-gradient(180deg, #0d1a44 13%, #fc7814 56%, #FFCAA3 100%);
+    background-image: linear-gradient(180deg, #0d1a44 13%, #20a0ff 56%, #99d2fc 100%);
   }
   img.banner-stars {
     top: -10px;
@@ -120,7 +120,7 @@
       height: 53px;
       line-height: 52px;
       font-size: 14px;
-      color: #fc7814;
+      color: #20a0ff;
       text-align: center;
       border: 0;
       border-top: 1px solid #eaeefb;
@@ -138,7 +138,7 @@
 
       &:hover {
         color: #fff;
-        background: #fc7814;
+        background: #20a0ff;
       }
     }
     &:hover {
