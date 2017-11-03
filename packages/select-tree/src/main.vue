@@ -42,6 +42,12 @@
   </div>
 </template>
 
+<style scoped>
+  .el-select-dropdown .el-tree {
+    border: 0;
+  }
+</style>
+
 <script type="text/babel">
   import Emitter from 'ele-fork-ui/src/mixins/emitter';
   import Locale from 'ele-fork-ui/src/mixins/locale';
