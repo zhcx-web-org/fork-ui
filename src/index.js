@@ -162,7 +162,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 };
 
 module.exports = {
-  version: '0.0.12',
+  version: '0.0.13',
   locale: locale.use,
   i18n: locale.i18n,
   install,
