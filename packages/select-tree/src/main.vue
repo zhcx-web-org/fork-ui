@@ -42,6 +42,12 @@
   </div>
 </template>
 
+<style scoped>
+  .el-select-dropdown .el-tree {
+    border: 0;
+  }
+</style>
+
 <script type="text/babel">
   import Emitter from 'ele-fork-ui/src/mixins/emitter';
   import Locale from 'ele-fork-ui/src/mixins/locale';
@@ -104,6 +110,7 @@
           };
         }
       },
+      valueKey: String,
       name: String,
       value: {
         required: true
@@ -126,7 +133,6 @@
         createdLabel: null,
         createdSelected: false,
         selected: {},
-        inputLength: 20,
         inputWidth: 0,
         cachedPlaceHolder: '',
         visible: false,
@@ -144,7 +150,6 @@
 
       /** Read */
       value(val) {
-        this.setSelected();
         this.$emit('change', val);
         this.dispatch('ElFormItem', 'el.form.change', val);
       },
@@ -155,11 +160,6 @@
           this.$refs.reference.$el.querySelector('input').blur();
           this.handleIconHide();
           this.broadcast('ElSelectDropdown', 'destroyPopper');
-          this.selectedLabel = '';
-          this.inputLength = 20;
-          if (this.selected) {
-            this.selectedLabel = this.selected.currentLabel;
-          }
         } else {
           this.handleIconShow();
           this.broadcast('ElSelectDropdown', 'updatePopper');
@@ -190,27 +190,6 @@
         if (icon && !hasClass(icon, 'el-icon-circle-close')) {
           addClass(icon, 'is-reverse');
         }
-      },
-
-      /** Read */
-      getOption(value) {
-        return {
-          value: value,
-          currentLabel: value.label
-        };
-      },
-
-      /** Read */
-      setSelected() {
-        let option = this.getOption(this.value);
-        if (option.created) {
-          this.createdLabel = option.currentLabel;
-          this.createdSelected = true;
-        } else {
-          this.createdSelected = false;
-        }
-        this.selectedLabel = option.currentLabel;
-        this.selected = option;
       },
 
       /** Read */
@@ -256,7 +235,13 @@
 
       /** Read */
       handleOptionSelect(option) {
-        this.$emit('input', option);
+        if(this.valueKey){
+          this.$emit('input', option[this.valueKey]);
+        }else{
+          this.$emit('input', option);
+        }
+        this.selectedLabel = option[this.treeProps.label];
+        this.selected = option;
         this.visible = false;
       },
 
