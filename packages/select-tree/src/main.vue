@@ -235,9 +235,9 @@
 
       /** Read */
       handleOptionSelect(option) {
-        if(this.valueKey){
+        if (this.valueKey) {
           this.$emit('input', option[this.valueKey]);
-        }else{
+        } else {
           this.$emit('input', option);
         }
         this.selectedLabel = option[this.treeProps.label];
