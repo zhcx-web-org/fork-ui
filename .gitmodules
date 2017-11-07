@@ -1,3 +1,6 @@
 [submodule "packages/cascader/theme-default"]
 	path = packages/cascader/theme-default
 	url = https://github.com/zhcx-web-org/theme-default
+[submodule "packages/theme-default"]
+	path = packages/theme-default
+	url = https://github.com/zhcx-web-org/theme-default
