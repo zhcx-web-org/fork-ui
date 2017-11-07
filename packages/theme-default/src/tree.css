@@ -28,8 +28,8 @@
     white-space: nowrap;
 
     @e content {
-      line-height: 36px;
-      height: 36px;
+      line-height: 32px;
+      height: 32px;
       cursor: pointer;
 
       & > .el-checkbox,

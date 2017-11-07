@@ -32,7 +32,7 @@
     }
 
     @e content {
-      padding: 10px 15px;
+      padding: 9px 15px;
       font-size: var(--collapse-content-size);
       color: var(--collapse-content-color);
       line-height: 1.769230769230769;

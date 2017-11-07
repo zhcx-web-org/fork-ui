@@ -62,13 +62,13 @@
 
   /* Font
   -------------------------- */
-  --font-size-base: 14px;
+  --font-size-base: 12px;
   --font-color-base: var(--color-base-black);
   --font-color-disabled-base: #bbb;
 
   /* Size
   -------------------------- */
-  --size-base: 14px;
+  --size-base: 12px;
 
   /* z-index
   -------------------------- */
@@ -88,10 +88,10 @@
 
   /* Checkbox
   -------------------------- */
-  --checkbox-font-size: 14px;
+  --checkbox-font-size: 12px;
   --checkbox-color: var(--color-base-black);
-  --checkbox-input-height: 18px;
-  --checkbox-input-width: 18px;
+  --checkbox-input-height: 16px;
+  --checkbox-input-width: 16px;
   --checkbox-input-border-radius: var(--border-radius-base);
   --checkbox-input-fill: var(--color-white);
   --checkbox-input-border: var(--border-base);
@@ -121,10 +121,10 @@
 
   /* Radio
   -------------------------- */
-  --radio-font-size: 14px;
+  --radio-font-size: 12px;
   --radio-color: var(--color-base-black);
-  --radio-input-height: 18px;
-  --radio-input-width: 18px;
+  --radio-input-height: 16px;
+  --radio-input-width: 16px;
   --radio-input-border-radius: var(--border-radius-circle);
   --radio-input-fill: var(--color-white);
   --radio-input-border: var(--border-base);
@@ -169,13 +169,13 @@
   --select-option-color: var(--link-color);
   --select-option-disabled-color: var(--color-extra-light-silver);
   --select-option-disabled-background: var(--color-white);
-  --select-option-height: 36px;
+  --select-option-height: 32px;
   --select-option-hover-background: var(--color-light-gray);
   --select-option-selected: var(--color-primary);
   --select-option-selected-hover: shade(var(--color-primary), 0.12);
 
   --select-group-color: #999;
-  --select-group-height: 30px;
+  --select-group-height: 28px;
   --select-group-font-size: 12px;
 
   --select-dropdown-background: var(--color-white);
@@ -254,8 +254,8 @@
   -------------------------- */
   --input-font-size: var(--font-size-base);
   --input-color: var(--font-color-base);
-  --input-width: 140px;
-  --input-height: 36px;
+  --input-width: 200px;
+  --input-height: 32px;
   --input-border: var(--border-base);
   --input-border-color: var(--border-color-base);
   --input-border-radius: var(--border-radius-base);
@@ -280,8 +280,8 @@
   --input-large-font-size: 16px;
   --input-large-height: 42px;
 
-  --input-small-font-size: 13px;
-  --input-small-height: 30px;
+  --input-small-font-size: 12px;
+  --input-small-height: 28px;
 
   --input-mini-font-size: 12px;
   --input-mini-height: 22px;
@@ -331,7 +331,7 @@
 
   /* Button
   -------------------------- */
-  --button-font-size: 14px;
+  --button-font-size: 12px;
   --button-border-radius: var(--border-radius-base);
   --button-padding-vertical: 10px;
   --button-padding-horizontal: 15px;
@@ -422,7 +422,7 @@
 
   /* Pagination
  -------------------------- */
-  --pagination-font-size: 13px;
+  --pagination-font-size: 12px;
   --pagination-fill: var(--color-white);
   --pagination-color: var(--link-color);
   --pagination-border-radius: 2px;
