@@ -250,7 +250,7 @@
 <style>
   .demo-cascader {
     .el-cascader {
-      width: 222px;
+      /* width: 222px; */
     }
   }
   .demo-cascader-size {

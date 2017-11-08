@@ -124,7 +124,7 @@
 </script>
 
 <style>
-  .demo-input.demo-zh-CN {
+  /* .demo-input.demo-zh-CN {
     .el-select .el-input {
       width: 110px;
     }
@@ -160,8 +160,8 @@
         text-align: left;
       }
     }
-  }
-  .el-autocomplete-suggestion.my-autocomplete {
+  } */
+  /* .el-autocomplete-suggestion.my-autocomplete {
     li {
       line-height: normal;
       padding: 7px *;
@@ -178,7 +178,7 @@
         color: #ddd;
       }
     }
-  }
+  } */
 </style>
 
 ## Input 输入框
