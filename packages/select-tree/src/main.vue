@@ -248,7 +248,7 @@
 
       /** Read */
       setSelected(value) {
-        if (value.length === 0) {
+        if (!value || value.length === 0) {
           this.selectedLabel = '';
           this.selected = null;
         } else {
