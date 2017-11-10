@@ -246,6 +246,7 @@
         this.visible = false;
       },
 
+      /** Read */
       setSelected(value) {
         if (value.length === 0) {
           this.selectedLabel = '';
