@@ -245,6 +245,42 @@
         this.visible = false;
       },
 
+      setSelected(value) {
+        this.setSelectedOption(value);
+        if (this.selectedOption) {
+          this.selectedLabel = this.selectedOption[this.treeProps.label];
+          this.selected = this.selectedOption;
+          this.visible = false;
+        }
+      },
+
+      setSelectedOption(id) {
+        for (let i = 0; i < this.treeData.length; i++) {
+          this._getData(this.treeData[i], id);
+        }
+      },
+
+      _getData(node, id) {
+        if (node == null) return false;
+        if (this.valueKey) {
+          if (id === node[this.valueKey]) {
+            this.selectedOption = node;
+            return false;
+          }
+        } else {
+          if (id[this.treeProps.label] === node[this.treeProps.label]) {
+            this.selectedOption = node;
+            return false;
+          }
+        }
+        let children = node[this.treeProps.children];
+        if (children) {
+          for (let i = 0 ; i < children.length; i++) {
+            this._getData(children[i], id);
+          }
+        }
+      },
+
       /** Read */
       toggleMenu() {
         if (!this.disabled) {
@@ -273,10 +309,6 @@
 
     created() {
       this.cachedPlaceHolder = this.currentPlaceholder = this.placeholder;
-      if (Array.isArray(this.value)) {
-        this.$emit('input', '');
-      }
-
       this.debouncedOnInputChange = debounce(this.debounce, () => {
         this.onInputChange();
       });
@@ -289,6 +321,7 @@
           this.inputWidth = this.$refs.reference.$el.getBoundingClientRect().width;
         }
       });
+      this.setSelected(this.value);
     },
 
     beforeDestroy() {

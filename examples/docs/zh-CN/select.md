@@ -91,7 +91,7 @@
           value: 'Guangzhou',
           label: '广州'
         }],
-        value: '',
+        value: '选项1',
         value2: '',
         value3: '',
         value4: '',
