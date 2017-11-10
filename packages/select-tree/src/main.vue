@@ -150,6 +150,7 @@
 
       /** Read */
       value(val) {
+        this.setSelected(val);
         this.$emit('change', val);
         this.dispatch('ElFormItem', 'el.form.change', val);
       },
@@ -246,11 +247,18 @@
       },
 
       setSelected(value) {
-        this.setSelectedOption(value);
-        if (this.selectedOption) {
-          this.selectedLabel = this.selectedOption[this.treeProps.label];
-          this.selected = this.selectedOption;
-          this.visible = false;
+        if (value.length === 0) {
+          this.selectedLabel = '';
+          this.selected = null;
+        } else {
+          this.setSelectedOption(value);
+          if (this.selectedOption) {
+            this.selectedLabel = this.selectedOption[this.treeProps.label];
+            this.selected = this.selectedOption;
+          } else {
+            this.selectedLabel = '';
+            this.selected = null;
+          }
         }
       },
 

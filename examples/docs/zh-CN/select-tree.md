@@ -64,6 +64,14 @@
           label: '三级 1-1-1'
         }
       };
+    },
+    methods: {
+      clickHandleClear() {
+        this.value1 = '';
+      },
+      clickHandleSetValue() {
+        this.value1 = 1;
+      }
     }
   };
 </script>
@@ -87,6 +95,8 @@
   <el-select-tree v-model="value1" :value-key="'uuid'" :tree-data="data" :tree-props="props" :clearable="true" placeholder="请选择"></el-select-tree>
   <hr>
   value: {{value1}}
+  <hr>
+  <el-button @click="clickHandleClear">清空</el-button><el-button @click="clickHandleSetValue">设置node.id=1</el-button>
 </template>
 
 <script>
