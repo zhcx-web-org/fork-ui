@@ -142,7 +142,7 @@
         let isFlat = false;
         const items = this._l(menu, item => {
           const events = {
-            on: {}
+              on: {click: ()=>this.$emit('pick', this.activeValue.slice(), false)}
           };
 
           if (item.__IS__FLAT__OPTIONS) isFlat = true;
